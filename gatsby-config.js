@@ -39,7 +39,7 @@ module.exports = {
 
         // If you are working on development/staging environment, you might want to
         // preview the latest version of records instead of the published one:
-        previewMode: process.env.NODE_ENV === "development",
+        previewMode: true,
 
         // Disable automatic reloading of content when some change occurs on DatoCMS:
         disableLiveReload: false,
