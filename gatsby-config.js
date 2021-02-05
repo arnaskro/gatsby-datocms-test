@@ -35,7 +35,7 @@ module.exports = {
         apiToken: process.env.DATO_API_TOKEN,
 
         // The project environment to read from. Defaults to the primary environment:
-        environment: `main`,
+        environment: process.env.DATO_ENV,
 
         // If you are working on development/staging environment, you might want to
         // preview the latest version of records instead of the published one:
