@@ -32,14 +32,14 @@ module.exports = {
       options: {
         // You can find your read-only API token under the Settings > API tokens
         // section of your administrative area. Make sure to grant both CDA and CMA permissions.
-        apiToken: process.env.GATSBY_API_TOKEN,
+        apiToken: process.env.DATO_API_TOKEN,
 
         // The project environment to read from. Defaults to the primary environment:
         environment: `main`,
 
         // If you are working on development/staging environment, you might want to
         // preview the latest version of records instead of the published one:
-        previewMode: true,
+        previewMode: Boolean(process.env.PREVIEW_ENABLED),
 
         // Disable automatic reloading of content when some change occurs on DatoCMS:
         disableLiveReload: false,
